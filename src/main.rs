@@ -8,9 +8,6 @@ struct Cli {
 
 fn main() {
     let args = Cli::parse();
-
-   // println!("Pattern: {:?}\nPath: {:?}", args.pattern, args.path);
-
     let data = std::fs::read_to_string(&args.path).expect("Unable to read.");
 
     for l in data.lines(){
