@@ -1,3 +1,3 @@
 # accio
 
-## Grep's clone written in Rust
+## Tool written in Rust to search for string patterns in files.
