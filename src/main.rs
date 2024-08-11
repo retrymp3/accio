@@ -1,3 +1,21 @@
+use clap::Parser;
+
+#[derive(Parser)]
+struct Cli {
+    pattern: String,
+    path: std::path::PathBuf,
+}
+
 fn main() {
-    println!("Hello, world!");
+    let args = Cli::parse();
+
+   // println!("Pattern: {:?}\nPath: {:?}", args.pattern, args.path);
+
+    let data = std::fs::read_to_string(&args.path).expect("Unable to read.");
+
+    for l in data.lines(){
+        if l.contains(&args.pattern){
+            println!("{}",l);
+        }
+    }
 }

@@ -1,8 +1,15 @@
 [package]
 name = "accio"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+authors = "Achuth V P <achuthvpvp@gmail.com>"
+license = "MIT OR Apache-2.0"
+description = "Look for strings in a file."
+homepage = "https://github.com/retrymp3/accio"
+repository = "https://github.com/retrymp3/accio"
+keywords = ["cli", "search", "grep"]
+categories = ["command-line-utilities"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = {version = "4.0", features = ["derive"]}
