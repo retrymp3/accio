@@ -1,5 +1,5 @@
 [package]
-name = "accio"
+name = "accio-string"
 version = "0.1.0"
 edition = "2021"
 authors = ["Achuth V P <achuthvpvp@gmail.com>"]
